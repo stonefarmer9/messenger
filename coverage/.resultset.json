@@ -9,6 +9,16 @@
         null,
         null
       ],
+      "/Users/joaoabbott-gribben/Projects/messaging/spec/features/input_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/joaoabbott-gribben/Projects/messaging/spec/features/messenger_spec.rb": [
         1,
         1,
@@ -18,6 +28,6 @@
         null
       ]
     },
-    "timestamp": 1545060728
+    "timestamp": 1545062633
   }
 }
