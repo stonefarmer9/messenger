@@ -8,7 +8,6 @@ end
 feature "Page displays past messages" do
   scenario "Page stores past messages" do
     visit('/')
-    expect(page).to have_content("Welcome to the Messenger App")
     fill_in 'message', with: "1"
     click_button 'Submit'
     fill_in 'message', with: "2"
