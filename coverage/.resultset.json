@@ -1,6 +1,14 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/joaoabbott-gribben/Projects/messaging/spec/features/infrastructure_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/joaoabbott-gribben/Projects/messaging/spec/features/messenger_spec.rb": [
         1,
         1,
@@ -10,6 +18,6 @@
         null
       ]
     },
-    "timestamp": 1545059636
+    "timestamp": 1545060728
   }
 }
