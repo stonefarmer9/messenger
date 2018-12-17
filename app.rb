@@ -11,7 +11,7 @@ class Messenger < Sinatra::Base
   post '/board' do
     session[:message] = params[:message]
     @message = session[:message]
-    erb :messge_board
+    erb :message_board
   end
 
 end
