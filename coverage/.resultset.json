@@ -1,0 +1,15 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/joaoabbott-gribben/Projects/messaging/spec/features/messenger_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1545059636
+  }
+}
