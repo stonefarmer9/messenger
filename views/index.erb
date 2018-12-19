@@ -1,16 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en", dir="ltr">
+<center>
  <head>
+   <meta charset="utf-8">
   <title>Messenger App</title>
  </head>
 <body>
   <h1> Welcome to the Messenger App </h1>
   <form action="/board" method='post'>
-    <label for='message'>
-      <input type='text' name='message'>
+    <textarea name='message' cols='40' rows='5'></textarea><br>
       <input type='submit' value='Submit'>
-    </label>
   </form>
 
+  <% @messages.reverse.each do |message| %>
+  <br>
+  <div>
+    <a href = '/messages/<%=message.id %>'> <%= message.text.slice(0...20) %></a>
+      </div>
+      <%= message.time %>
+      <br>
+      <% end %>
  </body>
+ </center>
 <html>

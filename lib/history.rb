@@ -2,9 +2,10 @@ class History
 
 	def store(message)
 		@message = message
-	end 
+	end
 
 	def log
 		@message
-	end 
-end 
+	end
+	
+end

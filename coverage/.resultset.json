@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/joaoabbott-gribben/Projects/messenger/spec/features/infrastructure_spec.rb": [
+      "/Users/georgeslevaillant/Documents/Makers/messenger/spec/features/infrastructure_spec.rb": [
         1,
         1,
         1,
@@ -9,7 +9,7 @@
         null,
         null
       ],
-      "/Users/joaoabbott-gribben/Projects/messenger/spec/features/input_spec.rb": [
+      "/Users/georgeslevaillant/Documents/Makers/messenger/spec/features/input_spec.rb": [
         1,
         1,
         1,
@@ -19,7 +19,7 @@
         null,
         null
       ],
-      "/Users/joaoabbott-gribben/Projects/messenger/spec/features/messenger_spec.rb": [
+      "/Users/georgeslevaillant/Documents/Makers/messenger/spec/features/messenger_spec.rb": [
         1,
         1,
         1,
@@ -37,59 +37,12 @@
         1,
         1,
         1,
-        0,
-        0,
-        null,
-        null
-      ],
-      "/Users/joaoabbott-gribben/Projects/messenger/spec/history_spec.rb": [
-        1,
-        null,
-        1,
-        null,
-        4,
-        4,
-        2,
-        2,
-        null,
         1,
         1,
-        1,
-        null,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/Users/joaoabbott-gribben/Projects/messenger/lib/history.rb": [
-        1,
-        null,
-        1,
-        5,
-        null,
-        null,
-        1,
-        2,
         null,
         null
       ]
     },
-    "timestamp": 1545067682
+    "timestamp": 1545233382
   }
 }
