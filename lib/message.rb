@@ -1,9 +1,11 @@
-class Message
-  attr_reader :text, :id, :time
+require 'data_mapper'
 
-  def initialize(text, id)
-    @text = text
-    @id = id
-    @time = Time.now
-  end
-end 
+class Message
+
+  include DataMapper::Resource
+
+  property :id,     Serial
+  property :text,   String
+  property :time,   DateTime
+
+end

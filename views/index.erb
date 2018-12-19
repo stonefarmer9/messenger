@@ -11,11 +11,11 @@
     <textarea name='message' cols='40' rows='5'></textarea><br>
       <input type='submit' value='Submit'>
   </form>
-
   <% @messages.reverse.each do |message| %>
   <br>
+  <br>
   <div>
-    <a href = '/messages/<%=message.id %>'> <%= message.text.slice(0...20) %></a>
+    <a href = '/messages/<%= message.id %>'> <%= message.text.slice(0...20) %></a>
       </div>
       <%= message.time %>
       <br>

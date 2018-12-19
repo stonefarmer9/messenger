@@ -6,14 +6,11 @@
   <title>Messenger App</title>
  </head>
 <body>
-    <% @messages.each do |message| %>
-    <% if message.id == @id %>
-    <%= message.text %>
-    <br>
-    <%= message.time %>
-    <% end %>
-    <br>
-    <% end %>
+  <%= @messages.text %>
+  <br>
+  <%= @messages.time %>
+  <br>
+  <br>
     <div>
       <input type='button' value='Home' onclick='history.back(-1)' />
   </body>
