@@ -1,5 +1,5 @@
 ENV['RACK_ENV'] ||= "development"
- 
+
 require 'sinatra/base'
 
 require 'data_mapper'
@@ -17,10 +17,7 @@ class Messenger < Sinatra::Base
   end
 
   post '/board' do
-    @message = Message.create(
-      :text => params[:message],
-      :time => Time.now
-    )
+    @message = Message.create(:text => params[:message])
     redirect '/'
   end
 

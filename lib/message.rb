@@ -4,8 +4,8 @@ class Message
   include DataMapper::Resource
 
   property :id,     Serial
-  property :text,   String
-  property :time,   DateTime
+  property :text,   Text
+  property :created_at,   Time
 
   def preview
     text[0...20]
