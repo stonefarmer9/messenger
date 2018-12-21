@@ -3,4 +3,5 @@ feature "Testing infrastructure" do
     visit('/')
     expect(title).to have_content("Messenger App")
   end
+  
 end

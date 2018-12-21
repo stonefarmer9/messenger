@@ -1,7 +1,7 @@
 feature "Page displays title" do
   scenario "Page welcomes user" do
     visit('/')
-    expect(page).to have_content("Welcome to the Messenger App")
+    expect(page).to have_content("Welcome to the best Messenger App of your life")
   end
 end
 

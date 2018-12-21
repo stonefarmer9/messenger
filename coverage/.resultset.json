@@ -7,6 +7,7 @@
         1,
         1,
         null,
+        null,
         null
       ],
       "/Users/georgeslevaillant/Documents/Makers/messenger/spec/features/input_spec.rb": [
@@ -43,6 +44,6 @@
         null
       ]
     },
-    "timestamp": 1545233382
+    "timestamp": 1545394218
   }
 }

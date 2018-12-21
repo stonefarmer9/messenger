@@ -1,16 +1,15 @@
+ENV['RACK_ENV'] ||= "development"
+ 
 require 'sinatra/base'
-require './lib/message'
-require 'rubygems'
-require 'data_mapper'
 
-DataMapper.setup(:default, 'postgres://georgeslevaillant@localhost/messages')
-DataMapper.finalize
-DataMapper.auto_upgrade!
+require 'data_mapper'
+require './lib/message'
+
+require './config/datamapper_setup'
 
 class Messenger < Sinatra::Base
 
   enable :sessions
-
 
   get '/' do
     @messages = Message.all
@@ -27,7 +26,7 @@ class Messenger < Sinatra::Base
 
   get '/messages/:id' do |id|
     @messages = Message.get!(id.to_i)
-    
+
     erb :message
   end
 
