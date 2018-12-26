@@ -5,7 +5,7 @@ class Message
 
   property :id,     Serial
   property :text,   Text
-  property :created_at,   Time
+  property :created_at, Time
 
   def preview
     text[0...20]
