@@ -23,7 +23,6 @@ class Messenger < Sinatra::Base
 
   get '/messages/:id' do |id|
     @messages = Message.get!(id.to_i)
-
     erb :message
   end
 

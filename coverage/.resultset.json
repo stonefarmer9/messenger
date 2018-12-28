@@ -20,6 +20,19 @@
         null,
         null
       ],
+      "/Users/georgeslevaillant/Documents/Makers/messenger/spec/features/message_link_spec.rb": [
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null
+      ],
       "/Users/georgeslevaillant/Documents/Makers/messenger/spec/features/messenger_spec.rb": [
         1,
         1,
@@ -44,6 +57,6 @@
         null
       ]
     },
-    "timestamp": 1545820738
+    "timestamp": 1546006498
   }
 }
