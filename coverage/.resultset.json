@@ -1,6 +1,45 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/georgeslevaillant/Documents/Makers/messenger/spec/features/edit_message_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null
+      ],
+      "/Users/georgeslevaillant/Documents/Makers/messenger/spec/features/web_helper.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        2,
+        2,
+        2,
+        2,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
       "/Users/georgeslevaillant/Documents/Makers/messenger/spec/features/infrastructure_spec.rb": [
         1,
         1,
@@ -20,30 +59,6 @@
         null,
         null
       ],
-      "/Users/georgeslevaillant/Documents/Makers/messenger/spec/features/web_helper.rb": [
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null
-      ],
       "/Users/georgeslevaillant/Documents/Makers/messenger/spec/features/message_link_spec.rb": [
         null,
         1,
@@ -52,7 +67,7 @@
         1,
         1,
         null,
-        1,
+        0,
         null,
         null
       ],
@@ -88,6 +103,6 @@
         null
       ]
     },
-    "timestamp": 1546007602
+    "timestamp": 1546008016
   }
 }
