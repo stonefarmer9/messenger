@@ -22,13 +22,19 @@ class Messenger < Sinatra::Base
   end
 
   get '/messages/:id' do |id|
-    @messages = Message.get!(id.to_i)
+    @message = Message.get!(id.to_i)
     erb :message
   end
 
-  get '/edit' do
-    @message = 'Walk softly and carry a big gun'
+  get '/messages/:id/edit' do |id|
+    @message = Message.get!(id.to_i)
     erb :edit
+  end
+
+  post '/messages/:id' do |id|
+    @message = Message.get!(id.to_i)
+    @message.update!(params[:message])
+    redirect '/'
   end
 
 end

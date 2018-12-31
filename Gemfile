@@ -8,12 +8,11 @@ gem 'sinatra'
 
 group :test do
   gem 'capybara'
+  gem 'database_cleaner'
   gem 'rspec'
   gem 'rubocop', '0.56.0'
   gem 'simplecov', require: false
   gem 'simplecov-console', require: false
-  gem 'database_cleaner'
-
 end
 
 gem "data_mapper", "~> 1.0"

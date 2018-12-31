@@ -10,4 +10,5 @@ class Message
   def preview
     text[0...20]
   end
+
 end

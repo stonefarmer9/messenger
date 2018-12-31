@@ -6,7 +6,9 @@
   <title>Messenger App</title>
  </head>
  <h1> Edit this message </h1>
- <form action="/edit" value='default' method ='post'>
-   <textarea name="edit" rows="8" cols="80">
-   <%= @message %> 
- </textarea>
+ <form action="/messages/<%=@message.id%>" method="post">
+     <input name="_method" type="hidden" value="put">
+     <textarea name="message[text]" id="text" rows="10" cols="40"><%= @message.text %></textarea>
+     <input type="submit" value="Update">
+   </form>
+ <br>

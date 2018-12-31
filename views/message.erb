@@ -6,17 +6,18 @@
   <title>Messenger App</title>
  </head>
 <body>
-  <%= @messages.text %>
+  <%= @message.text %>
   <br>
-  <%= @messages.created_at %>
+  <%= @message.created_at %>
   <br>
   <br>
     <div>
       <input type='button' value='Home' onclick='history.back(-1)' />
       <div>
-        <form action="/edit" method="get">
-          <input type='submit' value='Edit' />
-        </form>
+        <form action="/messages/<%= @message.id %>/edit">
+          <input type="submit" value="Edit">
+        </form
+
   </body>
   </center>
   </html>

@@ -19,10 +19,10 @@ feature "Editing a message" do
   scenario "Can edit a message" do
     add_and_view_full_message
     click_button 'Edit'
-    fill_in :update, with: "REDACTED ON ORDER OF ORDO MALLEUS"
-    click_button 'Submit'
+    fill_in :message[text], with: "REDACTED ON ORDER OF ORDO MALLEUS"
+    click_button 'Update'
 
-    expect(page).to have_content("REDACTED ON ORDER OF ORDO MALLEUS")
+    expect(page).to have_content("REDACTED ON ORDER OF")
     expect(page).not_to have_content("Walk softly and carry a big gun")
   end
 end
