@@ -27,7 +27,7 @@ class Messenger < Sinatra::Base
   end
 
   get '/edit' do
-    @message = 'Bilbo baggins'
+    @message = 'Walk softly and carry a big gun'
     erb :edit
   end
 
