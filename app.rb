@@ -37,4 +37,10 @@ class Messenger < Sinatra::Base
     redirect '/'
   end
 
+  post '/delete/:id' do |id|
+    @message = Message.get!(id.to_i)
+    @message.destroy
+    redirect '/'
+  end
+
 end
