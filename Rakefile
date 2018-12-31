@@ -4,7 +4,9 @@ namespace :db do
     require './lib/message'
     require 'data_mapper'
 
-    DataMapper.setup(:default, "postgres://georgeslevaillant@localhost/messagedevelopment")
+    DataMapper.setup(
+      :default, "postgres://georgeslevaillant@localhost/messagedevelopment"
+    )
     DataMapper.finalize
   end
 
