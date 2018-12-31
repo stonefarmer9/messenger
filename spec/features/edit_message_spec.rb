@@ -1,6 +1,12 @@
 require_relative 'web_helper'
 
 feature "Editing a message" do
+
+  scenario 'Can go to an edit page' do
+    add_and_view_full_message
+    click_button 'Edit'
+    expect(page).to have_content('Edit this message')
+  end
   scenario "Can edit a message" do
     add_and_view_full_message
     click_button 'Edit'
