@@ -4,10 +4,10 @@
 
 
   <h1> Welcome to the best Messenger App of your life, Ed</h1>
-  <form action="/board" method='post'>
-    <textarea name='message' cols='40' rows='5'></textarea><br>
-      <input type='submit' value='Submit'>
-  </form>
+<form action="/board" method='post'>
+  <%= erb :text_board %>
+</form>
+
   <% @messages.reverse.each do |message| %>
   <br>
   <br>
@@ -18,6 +18,6 @@
       </div>
       <br>
       <% end %>
- 
+
  </center>
 <html>
