@@ -1,5 +1,6 @@
 
 namespace :db do
+
   task :setup do
     require './lib/message'
     require 'data_mapper'
@@ -12,11 +13,11 @@ namespace :db do
 
   task :auto_migrate => :setup do
     DataMapper.auto_migrate!
-    puts 'Migration successful!'
+    puts 'Migration completed mathster!'
   end
 
   task :auto_upgrade => :setup do
     DataMapper.auto_upgrade!
-    puts 'Upgrade successful!'
+    puts 'Upgrade successful your royal evilneth!'
   end
 end

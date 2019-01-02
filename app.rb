@@ -13,9 +13,9 @@ class Messenger < Sinatra::Base
 
   get '/' do
     @messages = Message.all
-    erb(:index)
+    erb :index
   end
-
+   
   post '/board' do
     @message = Message.create(:text => params[:message])
     redirect '/'
