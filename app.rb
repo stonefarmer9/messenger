@@ -13,7 +13,7 @@ class Messenger < Sinatra::Base
 
   get '/' do
     @messages = Message.all
-    erb(:index)
+    erb :index
   end
 
   post '/board' do
@@ -38,9 +38,9 @@ class Messenger < Sinatra::Base
   end
 
   post '/delete/:id' do |id|
-  @message = Message.get!(id.to_i)
-  @message.destroy
-  redirect '/'
-end
+    @message = Message.get!(id.to_i)
+    @message.destroy
+    redirect '/'
+  end
 
 end

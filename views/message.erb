@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html lang="en", dir="ltr">
 <center>
- <head>
-   <meta charset="utf-8">
-  <title>Messenger App</title>
- </head>
-<body>
+
   <%= @message.text %>
   <br>
   <%= @message.created_at %>
@@ -16,15 +12,11 @@
       <div>
         <form action="/messages/<%= @message.id %>/edit">
           <input type="submit" value="Edit">
-        </form >
+        </form
         <div>
-         <form action="/delete/<%=@message.id%>" method="post">
-           <input type='submit' value="Delete">
-           </form>
+          <form action="/delete/<%=@message.id%>" method="post">
+            <input type='submit' value="Delete">
+            </form>
 
- </center>
- </html>
-
-  </body>
   </center>
   </html>
