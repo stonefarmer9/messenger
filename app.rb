@@ -5,7 +5,7 @@ require 'sinatra/base'
 require 'data_mapper'
 require './lib/message'
 
-require './config/datamapper_setup'
+require './config/data_mapper_config'
 
 class Messenger < Sinatra::Base
 
@@ -36,5 +36,11 @@ class Messenger < Sinatra::Base
     @message.update!(params[:message])
     redirect '/'
   end
+
+  post '/delete/:id' do |id|
+  @message = Message.get!(id.to_i)
+  @message.destroy
+  redirect '/'
+end
 
 end

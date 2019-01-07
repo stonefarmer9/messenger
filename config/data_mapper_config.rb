@@ -1,3 +1,4 @@
+
 require 'data_mapper'
 
 DataMapper.setup(

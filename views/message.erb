@@ -16,7 +16,14 @@
       <div>
         <form action="/messages/<%= @message.id %>/edit">
           <input type="submit" value="Edit">
-        </form
+        </form >
+        <div>
+         <form action="/delete/<%=@message.id%>" method="post">
+           <input type='submit' value="Delete">
+           </form>
+
+ </center>
+ </html>
 
   </body>
   </center>
