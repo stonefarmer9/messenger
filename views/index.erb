@@ -14,7 +14,8 @@
   <div>
     <a href = '/messages/<%= message.id %>'> <%= message.preview %></a>
     <br>
-    <%= message.created_at %>
+    <%= message.created_at %><br>
+    <%= message.tag[0].tag %>
       </div>
       <br>
       <% end %>

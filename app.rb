@@ -6,6 +6,7 @@ require 'data_mapper'
 require './lib/message'
 
 require './config/data_mapper_config'
+require 'pry'
 
 class Messenger < Sinatra::Base
 
@@ -18,11 +19,15 @@ class Messenger < Sinatra::Base
 
   post '/board' do
     @message = Message.create(:text => params[:message])
+    @tag = Tag.create(:tag => params[:tag], :message_id => @message.id)
+    p @tag
     redirect '/'
   end
 
   get '/messages/:id' do |id|
     @message = Message.get!(id.to_i)
+    @tag = @message.tag[0].tag
+    p @tag
     erb :message
   end
 

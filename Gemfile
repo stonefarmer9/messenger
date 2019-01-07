@@ -20,3 +20,5 @@ gem "data_mapper", "~> 1.0"
 gem "dm-postgres-adapter", "~> 1.0"
 
 gem 'pg'
+
+gem 'pry'
