@@ -8,16 +8,19 @@
   <br>
   <%= @tag %>
   <br>
+  <div>
+    <input type='button' value='Home' onclick='history.back(-1)' />
+  </div>
     <div>
-      <input type='button' value='Home' onclick='history.back(-1)' />
-      <div>
         <form action="/messages/<%= @message.id %>/edit">
           <input type="submit" value="Edit">
-        </form
+        </form >
+        </div>
         <div>
           <form action="/delete/<%=@message.id%>" method="post">
             <input type='submit' value="Delete">
             </form>
+            </div>
 
   </center>
   </html>

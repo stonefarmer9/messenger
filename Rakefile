@@ -1,3 +1,4 @@
+ENV['RACK_ENV'] ||= "development"
 
 namespace :db do
 
@@ -6,13 +7,14 @@ namespace :db do
     require 'data_mapper'
 
     DataMapper.setup(
-      :default, "postgres://georgeslevaillant@localhost/messagedevelopment"
+      :default, "postgres://georgeslevaillant@localhost/message#{ENV['RACK_ENV']}"
     )
     DataMapper.finalize
   end
 
   task :auto_migrate => :setup do
-    DataMapper.auto_migrate!
+      p ENV
+      DataMapper.auto_migrate!
     puts 'Migration completed mathster!'
   end
 

@@ -4,7 +4,7 @@ class Message
   include DataMapper::Resource
 
   property :id,     Serial
-  property :text,   Text
+  property :text,   Text,   :lazy => false
   property :created_at, Time
 
 

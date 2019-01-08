@@ -4,13 +4,14 @@ require 'sinatra/base'
 
 require 'data_mapper'
 require './lib/message'
-
+require './lib/tag'
 require './config/data_mapper_config'
 require 'pry'
 
 class Messenger < Sinatra::Base
 
   enable :sessions
+  enable :method_override
 
   get '/' do
     @messages = Message.all
@@ -44,7 +45,9 @@ class Messenger < Sinatra::Base
 
   post '/delete/:id' do |id|
     @message = Message.get!(id.to_i)
-    @message.destroy
+    @tag = @message.tag
+    @tag.destroy!
+    @message.destroy!
     redirect '/'
   end
 

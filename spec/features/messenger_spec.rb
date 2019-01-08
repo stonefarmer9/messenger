@@ -20,6 +20,7 @@ feature "Page displays past messages" do
   scenario 'displaying only the first 20 characters of a message' do
     visit '/'
     fill_in :message, with: 'This Message Exceeds 20 Characters'
+    fill_in :tag, with: "testy"
     click_button 'Submit'
 
     expect(page).to have_link 'This Message Exceeds'
