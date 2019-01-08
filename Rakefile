@@ -13,7 +13,6 @@ namespace :db do
   end
 
   task :auto_migrate => :setup do
-      p ENV
       DataMapper.auto_migrate!
     puts 'Migration completed mathster!'
   end
